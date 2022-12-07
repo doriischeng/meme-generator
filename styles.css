@@ -1,0 +1,88 @@
+body {
+  font-family: system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background-color: rgb(255, 246, 242);
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h3 {
+  color: hsl(22, 57%, 45%);
+  margin-bottom: 60px;
+}
+
+button {
+  margin-top: 10px;
+  width: 160px;
+}
+
+.container {
+  max-width: 900px;
+  margin-top: 80px;
+}
+
+.memeContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.textTop {
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Anton", sans-serif;
+  color: white;
+  position: absolute;
+  top: 10%;
+  z-index: 3;
+  text-align: center;
+}
+
+.textBottom {
+  font-size: 72px;
+  font-weight: 600;
+  font-family: "Anton", sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  z-index: 3;
+  text-align: center;
+}
+
+.removeButton {
+  color: black;
+  font-size: 42px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.memeContainer:hover .removeButton {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+#meme-creation img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+#meme-creation img:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+#image,
+#text-top,
+#text-bottom {
+  width: 700px;
+}
